@@ -1,0 +1,99 @@
+=== REPORTE DE TOKENS ===
+
+Linea 1: using System;
+  Tokens:
+    (1:1) IDENTIFIER 'using'
+    (1:7) IDENTIFIER 'System'
+    (1:13) SEMICOLON  ';'
+Linea 2: 
+  Tokens:
+Linea 3: class Program {
+  Tokens:
+    (3:1) IDENTIFIER 'class'
+    (3:7) IDENTIFIER 'Program'
+    (3:15) LBRACE     '{'
+Linea 4:     static void Main() {
+  Tokens:
+    (4:5) IDENTIFIER 'static'
+    (4:12) IDENTIFIER 'void'
+    (4:17) IDENTIFIER 'Main'
+    (4:21) LPAREN     '('
+    (4:22) RPAREN     ')'
+    (4:24) LBRACE     '{'
+Linea 5:         int numero = 10;
+  Tokens:
+    (5:9) KEYWORD    'int'
+    (5:13) IDENTIFIER 'numero'
+    (5:20) OPERATOR   '='
+    (5:22) NUMBER     '10'
+    (5:24) SEMICOLON  ';'
+Linea 6:         float precio = 99.99f;
+  Tokens:
+    (6:9) KEYWORD    'float'
+    (6:15) IDENTIFIER 'precio'
+    (6:22) OPERATOR   '='
+    (6:24) NUMBER     '99.99'
+    (6:29) IDENTIFIER 'f'
+    (6:30) SEMICOLON  ';'
+Linea 7:         string mensaje = "Hola Mundo";
+  Tokens:
+    (7:9) IDENTIFIER 'string'
+    (7:16) IDENTIFIER 'mensaje'
+    (7:24) OPERATOR   '='
+    (7:26) STRING     '"Hola Mundo"'
+    (7:38) SEMICOLON  ';'
+Linea 8:         Console.WriteLine(mensaje);
+  Tokens:
+    (8:9) IDENTIFIER 'Console'
+    (8:16) DOT        '.'
+    (8:17) IDENTIFIER 'WriteLine'
+    (8:26) LPAREN     '('
+    (8:27) IDENTIFIER 'mensaje'
+    (8:34) RPAREN     ')'
+    (8:35) SEMICOLON  ';'
+Linea 9:         Console.WriteLine("Número: " + numero);
+  Tokens:
+    (9:9) IDENTIFIER 'Console'
+    (9:16) DOT        '.'
+    (9:17) IDENTIFIER 'WriteLine'
+    (9:26) LPAREN     '('
+    (9:27) STRING     '"Número: "'
+    (9:38) OPERATOR   '+'
+    (9:40) IDENTIFIER 'numero'
+    (9:46) RPAREN     ')'
+    (9:47) SEMICOLON  ';'
+Linea 10:         Console.WriteLine("Precio: " + precio);
+  Tokens:
+    (10:9) IDENTIFIER 'Console'
+    (10:16) DOT        '.'
+    (10:17) IDENTIFIER 'WriteLine'
+    (10:26) LPAREN     '('
+    (10:27) STRING     '"Precio: "'
+    (10:38) OPERATOR   '+'
+    (10:40) IDENTIFIER 'precio'
+    (10:46) RPAREN     ')'
+    (10:47) SEMICOLON  ';'
+Linea 11:     }
+  Tokens:
+    (11:5) RBRACE     '}'
+Linea 12: }
+  Tokens:
+    (12:1) RBRACE     '}'
+Linea 13: 
+  Tokens:
+
+=== ERRORES DETECTADOS ===
+No se detectaron errores.
+
+=== RESUMEN POR TIPO ===
+KEYWORD : 2
+IDENTIFIER : 21
+NUMBER : 2
+STRING : 3
+LBRACE : 2
+RBRACE : 2
+LPAREN : 4
+RPAREN : 4
+SEMICOLON : 7
+OPERATOR : 5
+DOT : 3
